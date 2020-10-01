@@ -1,0 +1,136 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+*,
+*::before,
+*::after
+{
+    box-sizing: inherit;  
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color:#ffffff;
+    padding: 0 1em;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.nav__logo {
+    color: #2d3982;
+}
+
+.nav__menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav__menu-list {
+    margin-right: 1em;
+}
+
+.nav__menu-link {
+    color: black;
+    text-decoration: none;
+}
+
+.nav__menu-link:hover{
+    text-decoration: none;
+    border-bottom: 2px solid #e37889;
+    padding-bottom: 10px;   
+}
+
+.nav__active{
+    text-decoration: none;
+    border-bottom: 2px solid #e37889;
+    padding-bottom: 10px;   
+}
+
+.hero {
+    display: flex;
+    background-color: #f8f8f8;
+}
+
+.hero__main {
+    justify-content: left;
+    padding: 110px;
+}
+
+.hero__slogan {
+    font-family: Comic Sans MS;
+    color: #101d42;
+}
+
+.hero__para {
+    color: black;
+}
+
+.hero__button{
+    background-color: #5969d0;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    width: 150px;
+    height: 30px;
+}
+
+.hero__image-div {
+    padding: 50px;
+    width: 75%;
+    height: 100%;
+}
+
+.hero__image {
+    /* background-image: url(../assets/hero.png);
+    background-size: cover; 
+    background-position: center;
+    text-align: center;
+    height: 300px;
+    width: 100%; */
+    height: 100%;
+    width: 100%;
+}
+
+.footer {
+    padding: 50px;
+}
+
+.footer__heading {
+    margin: 0 0 0 55px; color:#101d42;
+}
+
+.footer__cards {
+    display: flex;
+    padding: 0 150px;
+}
+
+.footer__card {
+    flex: 33.33%;
+    padding: 25px;
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+}
+
+.footer__card-img {
+    width:100%; height: 100%;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    box-shadow: 0 4px 4px rgb(0,0,0,0.2);
+}
+
+.footer__card-img:hover{
+    border: 1px solid rgb(225, 33, 63, 0.5);
+}
+
+.footer__card-heading{
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+}
